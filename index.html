@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto Alura</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <img class="logo" src="img/logo-alura.svg" alt="logo" />
+      <h1 class="title">Codificador y decodificador</h1>
+    </header>
+
+    <div class="main">
+      <div class="encrypt">
+        <textarea
+          cols="10"
+          name=""
+          id="txt-area1"
+          placeholder="Digite su texto..."
+          class="line text-animation"
+        ></textarea>
+
+        <div class="info">
+          <img src="img/exclamation.svg" alt="exclamacion" width="12px" />
+          <p>Solo letras minúsculas y sin acento.</p>
+        </div>
+
+        <div class="buttons">
+          <button class="button btn-1">Encriptar</button>
+          <button class="button btn-2">Descriptar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="decrypt">
+      <img class="icone" id="icone" src="img/lupa.svg" alt="Lupa" />
+      <h2 id="none">Ningún mensaje encontrado</h2>
+
+      <textarea
+        cols="10"
+        readonly
+        name=""
+        id="txt-area2"
+        placeholder="[Escriba un texto que desee encriptar o desencriptar]"
+      ></textarea>
+
+      <h3 id="msg"></h3>
+
+      <div id="copy"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
